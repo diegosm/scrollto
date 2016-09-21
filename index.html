@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scrollTo Jquery</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<div class="menu">
+    <ul>
+        <li><a href="javascript:void(0)" class="bt1">Section 01</a></li>
+        <li><a href="javascript:void(0)" class="bt2">Section 02</a></li>
+        <li><a href="javascript:void(0)" class="bt3">Section 03</a></li>
+    </ul>
+
+</div>
+
+<section id="section1" class="section bg1">
+    Section 01
+</section>
+
+<section id="section2" class="section bg2">
+    Section 02
+</section>
+
+
+<section id="section3" class="section bg3">
+    Section 03
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="scrollto.js"></script>
+<script>
+    $(document).ready(function (){
+
+        $('.bt1').click(function () {
+            $('#section1').scrollTo(2000);
+        });
+
+
+        $('.bt2').click(function () {
+            $('#section2').scrollTo();
+        });
+
+        $('.bt3').click(function () {
+            $('#section3').scrollTo(1);
+        });
+
+
+    });
+</script>
+</body>
+</html>
